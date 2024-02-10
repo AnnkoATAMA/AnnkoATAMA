@@ -9,7 +9,7 @@
     </a>
 </p>
 
-### Skills
+### learning
 
 <p align="center">
     <h3 align="center">Languages</h3>
