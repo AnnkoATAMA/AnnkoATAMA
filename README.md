@@ -15,7 +15,7 @@
     <h3 align="center">Languages</h3>
     <p  align="center">
         <a href="https://skillicons.dev">
-            <img height=100 src="https://skillicons.dev/icons?i=java&perline=5&theme=dark">
+            <img height=100 src="https://skillicons.dev/icons?i=java,html&perline=5&theme=dark">
         </a>
     </p>
     <h3 align="center">Editor / IDE</h3>
