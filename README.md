@@ -12,7 +12,7 @@
 ### learning
 
 <p align="center">
-    <h3 align="center">Languages</h3>
+    <h3 align="center">Learning skill</h3>
     <p  align="center">
         <a href="https://skillicons.dev">
             <img height=100 src="https://skillicons.dev/icons?i=java,go,html,css,vue,react&perline=5&theme=dark">
