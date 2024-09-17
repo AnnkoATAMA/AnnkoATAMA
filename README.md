@@ -2,10 +2,10 @@
 
 <p align="center">
     <a href="https://github.com/AnnkoATAMA">
-        <img height=200 align="center" src="https://git-hub-readme-stats-l2xb.vercel.app/api?username=AnnkoATAMA&theme=cobalt&title_color=00bfff&show_icons=true&count_private=true"/>
+        <img height=400 align="center" src="https://git-hub-readme-stats-l2xb.vercel.app/api?username=AnnkoATAMA&theme=cobalt&title_color=00bfff&show_icons=true&count_private=true"/>
     </a>
     <a href="https://github.com/AnnkoATAMA">
-        <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnnkoATAMA&theme=cobalt&title_color=00bfff&show_icons=true&count_private=true"/>
+        <img height=400 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnnkoATAMA&theme=cobalt&title_color=00bfff&show_icons=true&count_private=true"/>
     </a>
 </p>
 
