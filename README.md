@@ -21,7 +21,7 @@
     <h3 align="center">Editor / IDE</h3>
     <p align="center">
         <a href="https://skillicons.dev">
-            <img height=100 src="https://skillicons.dev/icons?i=idea,webstorm,vscode&theme=dark">
+            <img height=100 src="https://skillicons.dev/icons?i=idea,vscode&theme=dark">
         </a>
     </p>
 </p>
