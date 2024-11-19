@@ -15,7 +15,7 @@
     <h3 align="center">Learning skill</h3>
     <p  align="center">
         <a href="https://skillicons.dev">
-            <img height=200 src="https://skillicons.dev/icons?i=java,go,html,css,vue,react&perline=5&theme=dark">
+            <img height=200 src="https://skillicons.dev/icons?i=java,go,html,css,vue,react,swift&perline=5&theme=dark">
         </a>
     </p>
     <h3 align="center">Editor / IDE</h3>
