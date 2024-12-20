@@ -39,113 +39,74 @@ jobs:
           <html lang="ja">
           <head>
             <meta charset="UTF-8">
-            <title>馬券風デザイン</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <style>
               body {
-                font-family: "Noto Sans JP", Arial, sans-serif;
-                background-color: #f4f4f4;
+                font-family: 'Noto Sans JP', sans-serif;
+                margin: 0;
+                padding: 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
-                margin: 0;
+                background-color: #f0f0f0;
               }
               .ticket {
-                width: 400px;
+                width: 800px;
+                height: 400px;
+                background: white;
                 border: 2px solid black;
-                background: #ffffff;
-                padding: 10px;
-                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
                 position: relative;
+                padding: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
               }
-              .header {
+              .ticket-header {
                 display: flex;
                 justify-content: space-between;
-                font-size: 12px;
-                margin-bottom: 5px;
+                align-items: center;
               }
-              .race-number {
+              .race-info {
+                font-size: 20px;
+                font-weight: bold;
+              }
+              .win {
+                position: absolute;
+                top: 50px;
+                right: 20px;
+                font-size: 40px;
+                font-weight: bold;
+                color: #007700;
+              }
+              .details {
+                margin-top: 20px;
+                font-size: 18px;
+              }
+              .details .horse {
                 font-size: 24px;
                 font-weight: bold;
-                text-align: center;
-                margin-bottom: 10px;
               }
-              .bet-info {
-                display: flex;
-                justify-content: space-between;
-                font-size: 14px;
-                margin-bottom: 10px;
-              }
-              .bet-type {
-                text-align: center;
-                font-size: 16px;
-                font-weight: bold;
-                margin-bottom: 10px;
-              }
-              .table {
-                width: 100%;
-                border: 1px solid black;
-                border-collapse: collapse;
-                margin-bottom: 10px;
-              }
-              .table th, .table td {
-                border: 1px solid black;
-                padding: 5px;
-                text-align: center;
-              }
-              .footer {
-                font-size: 12px;
-                display: flex;
-                justify-content: space-between;
-              }
-              .footer .total {
-                font-size: 14px;
-                font-weight: bold;
-              }
-              .watermark {
+              .qr {
                 position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 50px;
-                color: rgba(0, 255, 0, 0.2);
-                white-space: nowrap;
-                pointer-events: none;
-                z-index: -1;
+                bottom: 20px;
+                left: 20px;
               }
             </style>
           </head>
           <body>
             <div class="ticket">
-              <div class="header">
-                <span>2017年4回3日</span>
-                <span>東京 10レース</span>
+              <div class="ticket-header">
+                <div class="race-info">2017年5回7日 中山 10レース</div>
+                <div>第140回 中山大障害 (J・GI)</div>
               </div>
-              <div class="race-number">3連単</div>
-              <div class="bet-info">
-                <span>TRIFECTA</span>
-                <span>軸2頭流し</span>
+              <div class="details">
+                <div>単勝</div>
+                <div class="horse">7 オジュウチョウサン</div>
+                <div>100円</div>
               </div>
-              <div class="bet-type">WHEEL</div>
-              <table class="table">
-                <tr>
-                  <th>1頭目</th>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <th>2頭目</th>
-                  <td>10</td>
-                </tr>
-                <tr>
-                  <th>3頭目</th>
-                  <td>13, 4, 7, 8</td>
-                </tr>
-              </table>
-              <div class="footer">
-                <span>組み合わせ数: 5×6</span>
-                <span class="total">合計: 300,000円</span>
+              <div class="win">WIN</div>
+              <div class="qr">
+                <img src="https://via.placeholder.com/100" alt="QR Code">
               </div>
-              <div class="watermark">JRA</div>
             </div>
           </body>
           </html>
