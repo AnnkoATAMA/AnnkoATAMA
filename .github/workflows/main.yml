@@ -14,6 +14,12 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      # 日本語フォントのインストール
+      - name: Install Japanese Fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
+
       # Node.js環境をセットアップ
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -35,7 +41,7 @@ jobs:
             <title>馬券風デザイン</title>
             <style>
               body {
-                font-family: Arial, sans-serif;
+                font-family: "Noto Sans JP", Arial, sans-serif;
                 margin: 0;
                 padding: 20px;
                 background-color: #f4f4f4;
@@ -126,7 +132,7 @@ jobs:
           node -e "
           const puppeteer = require('puppeteer');
           (async () => {
-            const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+            const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox', '--fontconfig'] });
             const page = await browser.newPage();
             await page.setContent(require('fs').readFileSync('ticket.html', 'utf8'));
             await page.screenshot({ path: 'ticket.png' });
@@ -136,6 +142,8 @@ jobs:
 
       # 生成された画像をコミット
       - name: Commit Ticket Image
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
