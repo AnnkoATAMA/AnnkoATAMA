@@ -49,6 +49,7 @@
         <td>10</td> <td align=center> <img height=24 src="https://skillicons.dev/icons?i=prisma&perline=5&theme=dark"> </td> <td></td>
       </tr>
     </table>
+    ![馬券画像](ticket.png)
 </div>
-![馬券画像](ticket.png)
+
 
