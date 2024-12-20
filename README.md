@@ -51,3 +51,4 @@
     </table>
 </div>
 
+![馬券画像](ticket.png)
